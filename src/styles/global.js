@@ -9,13 +9,16 @@ export default createGlobalStyle`
   }
 
   html, body, #root {
-    min-height: 100%;
+    background-color: #000000!important;
+    color: #ffffff!important;
+
+    font-size: 1.1rem!important;
+    line-height: 1.5rem!important;
+    text-align: center!important;
   }
 
   body {
-    background: ${(props) => props.theme.colors.background};
     -webkit-font-smoothing: antialiased !important;
-    padding: 1rem;
   }
 
   a {
@@ -26,8 +29,7 @@ export default createGlobalStyle`
   }
 
   body, input, p, a, button {
-    color: ${(props) => props.theme.colors.text};
-    font-size: ${(props) => props.theme.fontSizes.normal};
+
     font-family: ${(props) => props.theme.fonts};
   }
 
